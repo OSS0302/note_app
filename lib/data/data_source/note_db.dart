@@ -1,10 +1,10 @@
 import 'package:note_app/domain/model/note.dart';
 import 'package:sqflite/sqflite.dart';
 
-class NoteDB {
+class NoteDbHelper {
   Database db;
 
-  NoteDB(this.db);
+  NoteDbHelper(this.db);
 
   // 아이디를 통해서
   Future<Note?> getNoteById(int id) async {
