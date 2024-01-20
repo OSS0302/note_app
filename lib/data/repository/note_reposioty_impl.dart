@@ -1,9 +1,9 @@
-import 'package:note_app/data/data_source/note_db.dart';
+import 'package:note_app/data/data_source/note_db_helper.dart';
 import 'package:note_app/domain/model/note.dart';
 import 'package:note_app/domain/repository/note_repository.dart';
 
 class NoteRepositoryImpl implements NoteRepository {
-  final NoteDB db;
+  final NoteDbHelper db;
 
   const NoteRepositoryImpl({
     required this.db,
